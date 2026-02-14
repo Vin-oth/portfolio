@@ -330,31 +330,31 @@ a{
     }
     
     .navbar {
+        flex-direction: column;
         padding: 15px 5%;
     }
     
     .navbar .logo {
         font-size: 24px;
+        margin-bottom: 15px;
     }
     
     .navbar ul {
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #1f242d;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .navbar ul li {
-        margin: 15px 0;
+        margin: 5px 10px;
+    }
+    
+    .navbar ul li a {
+        font-size: 16px;
     }
     
     .home {
         flex-direction: column;
-        padding: 100px 5% 20px;
+        padding: 150px 5% 20px;
         height: auto;
         min-height: 100vh;
     }
