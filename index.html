@@ -14,12 +14,17 @@
 <body>
     <nav class="navbar">
         <a href="#" class="logo">Portfolio.</a>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">service</a></li>
-            <li><a href="mailto:vinoth.nlk444@gmail.com">Contact</a></li>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-menu">
+            <li class="active"><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()">About</a></li>
+            <li><a href="#" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#" onclick="toggleMenu()">service</a></li>
+            <li><a href="mailto:vinoth.nlk444@gmail.com" onclick="toggleMenu()">Contact</a></li>
         </ul>
     </nav>
 
@@ -80,6 +85,13 @@
         </div>
 
     </section>
+
+    <script>
+    function toggleMenu() {
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('active');
+    }
+    </script>
     
 </body>
 </html>
